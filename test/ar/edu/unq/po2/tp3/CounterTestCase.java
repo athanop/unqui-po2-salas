@@ -2,11 +2,14 @@ package ar.edu.unq.po2.tp3;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class CounterTestCase {
 	private Counter counter;
+	private ArrayList<Integer> arrayTest = new ArrayList<Integer>();
 
 @BeforeEach
 public void setUp() throws Exception {
@@ -25,6 +28,10 @@ public void setUp() throws Exception {
 	counter.addNumber(4);
 	}
 
+@BeforeEach
+public void initialize() {
+	arrayTest.add(1111); arrayTest.add(2222); arrayTest.add(24688); arrayTest.add(2468888); 
+}
 
 //verifica la cantidad de pares
 @Test
@@ -53,4 +60,44 @@ public void verificarCantidadDeMultiplos() {
 	// I check the amount is the expected one
 	assertEquals(amount, 1);
 	}
+
+
+
+//Test del ejercicio 2 Desarmando numeros
+
+@Test
+public void contadorDeDigitos() {
+	assertEquals(6, counter.cantidadDeDigitosDe(123456));
+}
+
+
+@Test
+public void mayorCantidadDeParesEntreDosNumeros() {
+	assertEquals(2234,counter.numerosConMasParesEntre(1112, 2234));
+}
+
+@Test
+public void digitoSinPares() {
+	Counter desarmar = new Counter();
+	int sinPares = desarmar.numerosParesEn(1111);
+	System.out.println(sinPares);
+	assertEquals(0,sinPares);
+}
+
+
+@Test
+public void numeroConMasParesEnElArray() {
+	assertEquals(2468888, counter.desarmarNumeros(arrayTest));
+}
+
+
+
+
+
+
+
+
+
+
+
 }
