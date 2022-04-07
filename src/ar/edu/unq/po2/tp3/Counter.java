@@ -72,4 +72,45 @@ public class Counter {
 		return (n1%n2==0);
 	}
 	
+	//EJERCICIO 2 DESARMANDO NÚMEROS.
+	
+	public int desarmarNumeros(ArrayList<Integer> enteros) {
+		
+		int numerosConMasPares = enteros.get(0);
+		for(int entero:enteros) {
+			numerosConMasPares = numerosConMasParesEntre(numerosConMasPares, entero);
+		}		
+		return numerosConMasPares;
+	}
+
+	public int numerosConMasParesEntre(int x, int y) {
+		int numMayor;
+		if 	(numerosParesEn(x) >= numerosParesEn(y)){
+			numMayor = x;
+		}
+		else {
+			numMayor = y;
+		}
+		return numMayor;
+	}
+
+	//obtengo los numeros pares del digito
+	public int numerosParesEn(int x) {
+		for (int i = 0; i < cantidadDeDigitosDe(x); i++) {
+			this.addNumber(x % 10);
+			x = x / 10;
+		}
+		return (this.obtenerCantidadDePares());
+	}
+	
+	public int cantidadDeDigitosDe(int numero) {
+		int cifras = 1;
+		int n = numero;
+		while(n >= 10) {
+			n = n/10;
+			cifras++;
+		}
+		return cifras;
+	}
+	
 }
