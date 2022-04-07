@@ -113,4 +113,23 @@ public class Counter {
 		return cifras;
 	}
 	
+	//EJERCICIO 3 MULTIPLOS
+	public int multiploEntre(int x, int y) {
+		int resultado = -1;
+		for(int i=0; i < 1000; i++) {
+			if(sonMultiplos(x,y,i)) {
+				resultado = i;
+			}
+		}
+		return resultado;
+	}
+
+	public boolean sonMultiplos(int x, int y, int i) {
+		return (this.esMultiplo(i,x) && this.esMultiplo(i,y));
+	}
+	
+	
+	
+	
+	
 }
