@@ -80,7 +80,6 @@ public void mayorCantidadDeParesEntreDosNumeros() {
 public void digitoSinPares() {
 	Counter desarmar = new Counter();
 	int sinPares = desarmar.numerosParesEn(1111);
-	System.out.println(sinPares);
 	assertEquals(0,sinPares);
 }
 
@@ -91,9 +90,18 @@ public void numeroConMasParesEnElArray() {
 }
 
 
+//Test del ejercicio 3 Múltiplos
+
+@Test
+public void multiplosEntreDosNumeros() {
+	assertEquals(999, counter.multiploEntre(3, 9));
+}
 
 
-
+@Test
+public void sonMultiplos() {
+	assertTrue(counter.sonMultiplos(3, 9,999));
+}
 
 
 
