@@ -3,8 +3,6 @@ package ar.edu.unq.po2.tp3;
 import java.util.ArrayList;
 
 public class Multioperador {
-
-	
 	
 	public int sumatoria(ArrayList<Integer> listaDeNumeros) {
 		int resultado=0;
