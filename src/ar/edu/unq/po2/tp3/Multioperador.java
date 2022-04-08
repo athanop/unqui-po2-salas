@@ -36,13 +36,4 @@ public class Multioperador {
 		return resultado;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
