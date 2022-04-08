@@ -14,14 +14,9 @@ public class Multioperador {
 
 	public int restarArray(ArrayList<Integer> listaDeNumeros) {
 		int resultado=0;
-		if(listaDeNumeros.isEmpty()) { //si está vacía la lista, devuelvo un 0
-			return resultado;
-		}
-		else {
-			int p = listaDeNumeros.get(0); //agarro el primer elemento de la lista. posición 0
-			for(int i=1; i <listaDeNumeros.size(); i++) { //comienzo a iterar desde la posición 1
-				resultado = p-listaDeNumeros.get(i); //resto el primer elemento del array con el segundo
-			}
+		int p = listaDeNumeros.get(0); //agarro el primer elemento de la lista. posición 0
+		for(int i=1; i <listaDeNumeros.size(); i++) { //comienzo a iterar desde la posición 1
+			resultado = p-listaDeNumeros.get(i); //resto el primer elemento del array con el segundo
 		}
 		return resultado;
 	}
