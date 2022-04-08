@@ -13,13 +13,23 @@ El mecanismo se llama encapsulamiento.
 public class Persona {
 	
 	private String nombre;
+	private String apellido;
+	private int edad;
 	private LocalDate fechaDeNacimiento;
-	
 	
 	public Persona(String nombre, LocalDate fecha) {
 		setNombre(nombre);
 		setFechaDeNacimiento(fecha);
 	}
+	
+	//este constructor es del equipo de trabajo
+	public Persona(String nombre, String apellido,int edad) {
+		setNombre(nombre);
+		setApellido(apellido);
+		setEdad(edad);
+	}
+	
+
 	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
@@ -40,6 +50,20 @@ public class Persona {
 	public int calcularEdad() {
 		return (LocalDate.now().getYear()) - (getFechaDeNacimiento().getYear());
 	}
+
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
 	
 
 
