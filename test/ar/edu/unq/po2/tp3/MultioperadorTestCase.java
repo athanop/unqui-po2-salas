@@ -18,8 +18,6 @@ public class MultioperadorTestCase {
 	public void setUp() {
 		array.add(10);
 		array.add(5);
-		
-	
 	}
 	
 	
