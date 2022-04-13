@@ -14,7 +14,7 @@ public class Producto {
 	
 	public Producto(String nombreProducto, Double precioProducto, Boolean esCuidado) {
 		this(nombreProducto, precioProducto);
-		this.esPrecioCuidado = esCuidado;
+		this.setEsPrecioCuidado(esCuidado);
 		
 	}
 
