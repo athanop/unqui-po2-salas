@@ -39,7 +39,6 @@ public class Producto {
 		return esPrecioCuidado;
 	}
 
-
 	public String getNombre() {
 		return nombre;
 	}
