@@ -1,4 +1,4 @@
-package supermercado;
+package ar.edu.unq.po2.tp4;
 
 public class IngresoBasico extends Ingreso{
 	
