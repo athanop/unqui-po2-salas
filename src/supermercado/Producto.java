@@ -1,31 +1,22 @@
 package supermercado;
 
-public class Producto {
+public abstract class Producto {
 	
 	private String nombre;
-	private double precio;
-	private boolean esPrecioCuidado;
-	private double descuento;
+	private double  precio;
+	private boolean esPrecioCuidado = false ;  //Por defecto, el producto no es parte del programa, a menos que se especifique lo contrario.
 
 	public Producto(String nombreProducto, Double precioProducto) {
 		this.setNombre(nombreProducto);
 		this.setPrecio(precioProducto);
 	}
 	
-	public Producto(String nombreProducto, Double precioProducto, Boolean esCuidado, Double conDescuento) {
+	public Producto(String nombreProducto, Double precioProducto, Boolean esCuidado) {
 		this(nombreProducto, precioProducto);
 		this.setEsPrecioCuidado(esCuidado);
-		this.setDescuento(conDescuento);
 	}
 
 
-	public double getDescuento() {
-		return descuento;
-	}
-
-	public void setDescuento(double descuento) {
-		this.descuento = descuento;
-	}
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;

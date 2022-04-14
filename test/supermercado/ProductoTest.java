@@ -12,16 +12,19 @@ public class ProductoTest {
 	
 	@BeforeEach
 	public void setUp() {
-		arroz = new Producto("Arroz", 18.9d, true, 5d);
-		vino = new Producto("Vino", 50d);
+		arroz = new ProductoTradicional("Arroz", 18.9d, false);   
+		vino = new ProductoTradicional("Vino", 50d);                
+		
 	}
 	
 	
 	@Test
 	public void testConstructor() {
+		
+		
 		assertEquals("Arroz", arroz.getNombre());
 		assertEquals(new Double(18.9), arroz.getPrecio());
-		assertTrue(arroz.getEsPrecioCuidado());
+		assertFalse(arroz.getEsPrecioCuidado());
 		
 		assertEquals("Vino", vino.getNombre());
 		assertEquals(new Double(50), vino.getPrecio());
