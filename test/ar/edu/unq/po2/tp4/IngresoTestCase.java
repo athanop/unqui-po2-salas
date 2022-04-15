@@ -1,9 +1,13 @@
-package supermercado;
+package ar.edu.unq.po2.tp4;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp4.Ingreso;
+import ar.edu.unq.po2.tp4.IngresoBasico;
+import ar.edu.unq.po2.tp4.IngresoPorHorasExtras;
 
 class IngresoTestCase {
 

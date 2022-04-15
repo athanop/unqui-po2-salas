@@ -8,7 +8,7 @@ public class IngresoBasico extends Ingreso{
 
 	@Override
 	public double impuestoPorIngreso() {
-		return super.getMonto()*0.02;
+		return super.getMonto();
 	}
 	
 }
