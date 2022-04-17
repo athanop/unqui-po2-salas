@@ -1,6 +1,6 @@
 package ar.edu.unq.po2.tp4;
 
-public abstract class Producto {
+public class Producto {
 	
 	private String nombre;
 	private double  precio;
