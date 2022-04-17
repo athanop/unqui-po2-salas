@@ -1,6 +1,6 @@
 package ar.edu.unq.po2.tp4;
 
-public abstract class Ingreso {
+public class Ingreso {
 
 	private String mes;
 	private String concepto;
@@ -13,7 +13,9 @@ public abstract class Ingreso {
 	}
 
 	
-	public abstract double impuestoPorIngreso(); 
+	public double impuestoPorIngreso() {
+		return this.getMonto();
+	} 
 	
 	public void setMes(String mes) {
 		this.mes = mes;

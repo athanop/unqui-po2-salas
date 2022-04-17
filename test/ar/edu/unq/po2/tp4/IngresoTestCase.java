@@ -6,7 +6,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import ar.edu.unq.po2.tp4.Ingreso;
-import ar.edu.unq.po2.tp4.IngresoBasico;
 import ar.edu.unq.po2.tp4.IngresoPorHorasExtras;
 
 class IngresoTestCase {
@@ -17,13 +16,13 @@ class IngresoTestCase {
 	
 	@BeforeEach
 	void setUp() throws Exception {
-		ingreso = new IngresoBasico("Junio","Comportamiento", 40);
+		ingreso = new Ingreso("Junio","Comportamiento", 40);
 		ingresoPorHorasExtras = new IngresoPorHorasExtras("Junio", "Comportamiento", 0, 4);
 	}
 
 	@Test
 	void testImpuestoIngreso() {
-		assertEquals(ingreso.impuestoPorIngreso(), 0.8);
+		assertEquals(ingreso.impuestoPorIngreso(), 40.0);
 		assertEquals(ingresoPorHorasExtras.impuestoPorIngreso(), 0);
 	}
 
