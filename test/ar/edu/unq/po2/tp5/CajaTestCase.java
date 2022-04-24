@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 class CajaTestCase {
 	
 	private Caja caja;
+	private Caja caja2;
 	private Cliente cliente1;
 	private Cliente cliente2;
 	private Cliente cliente3;
@@ -19,6 +20,8 @@ class CajaTestCase {
 	private Producto cerveza;
 	private ProductoCooperativa leche;
 	private MercadoCentral mercado;
+	private FacturaDeImpuesto facturaImpuesto;
+	private FacturaDeServicio facturaServicio;
 	
 	@BeforeEach
 	void setUp() throws Exception {
@@ -51,7 +54,14 @@ class CajaTestCase {
 		caja.registrarProducto(cliente2, mercado);
 		caja.registrarProducto(cliente3, mercado);
 	
+		//facturas
+		facturaImpuesto = new FacturaDeImpuesto(20);
+		facturaServicio = new FacturaDeServicio(20, 10);
 		
+		//caja registrando factura
+		caja2 = new Caja();
+		caja.registrarPago(facturaImpuesto); //caja 1 registrando el pago de la factura de impuesto
+		caja2.registrarPago(facturaServicio); //caja 2 registrando el pago de la factura de servicio
 	}
 
 
@@ -71,5 +81,15 @@ class CajaTestCase {
 		assertEquals(295d, cliente3.getMontoAPagar());
 	}
 
+	@Test
+	void testRegistrarFacturaDeImpuesto() {
+		assertEquals(20, caja.getMontoTotal());
+	}
+	
+	@Test
+	void testRegistrarFacturaDeServicio() {
+		assertEquals(200, caja2.getMontoTotal());
+		
+	}
 
 }
