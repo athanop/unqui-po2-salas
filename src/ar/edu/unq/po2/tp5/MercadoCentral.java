@@ -32,8 +32,6 @@ public class MercadoCentral {
 	}
 
 
-	
-
 	public void agregarProducto(Producto producto) {
 		this.getProductos().add(producto);
 	}
