@@ -1,0 +1,13 @@
+Collection y List son interfaces, por lo que no pueden ser instanciadas.
+Podemos utilizar ArrayList(tiene indice) o LinkedList(tiene puntero) en ese caso.
+
+GetFirstFrom devuelve el primer elemento de la colección, si la misma es una colección que mantiene un orden. (Por ejemplo los bags no tienen orden).
+
+AddLast funciona con las listas, ya que agrega el elemento directamente al final.
+
+GetSubCollection funciona con las listas, devuelve una parte de la lista indicada por dos indices.
+
+ContainsElement funciona con cualquiera, ya que indica si la colección contiene el elemento en cuestión.
+
+
+
