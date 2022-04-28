@@ -42,7 +42,7 @@ class PersonaYMascotaTestCase {
 	
 	@Test 
 	void testConstructorMascota() {
-		assertEquals("Puchu", mascota1.getClass());
+		assertEquals("Puchu", mascota1.getNombre());
 		assertEquals("Caniche", mascota1.getRaza());
 	}
 

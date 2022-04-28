@@ -40,7 +40,7 @@ class MercadoCentralTestCase {
 		
 		//clientes
 		cliente1 = new Cliente();
-		cliente1.agregarProducto(miel);
+		cliente1.agregar(miel);
 		
 	
 	}

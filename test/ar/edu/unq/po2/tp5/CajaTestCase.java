@@ -34,62 +34,53 @@ class CajaTestCase {
 		
 		//cliente1
 		cliente1 = new Cliente();
-		cliente1.agregarProducto(vino);
-		cliente1.agregarProducto(cerveza);
+		cliente1.agregar(vino);
+		cliente1.agregar(cerveza);
+	
 		
 		//cliente 2
 		cliente2 = new Cliente();
-		cliente2.agregarProducto(pan);
-		cliente2.agregarProducto(vino);
+		cliente2.agregar(pan);
+		cliente2.agregar(vino);
 		
 		//cliente3
 		cliente3 = new Cliente();
-		cliente3.agregarProducto(vino);
-		cliente3.agregarProducto(cerveza);
-		cliente3.agregarProducto(leche);
+		cliente3.agregar(vino);
+		cliente3.agregar(cerveza);
+		cliente3.agregar(leche);
 		
 		caja = new Caja();
 		mercado = new MercadoCentral();
-		caja.registrarProducto(cliente1, mercado);
-		caja.registrarProducto(cliente2, mercado);
-		caja.registrarProducto(cliente3, mercado);
-	
+		
 		//facturas
 		facturaImpuesto = new FacturaDeImpuesto(20);
 		facturaServicio = new FacturaDeServicio(20, 10);
 		
-		//caja registrando factura
-		caja2 = new Caja();
-		caja.registrarPago(facturaImpuesto); //caja 1 registrando el pago de la factura de impuesto
-		caja2.registrarPago(facturaServicio); //caja 2 registrando el pago de la factura de servicio
+		
 	}
 
 
 	@Test
 	void testMontoTotalCliente1() {
-		assertEquals(205d, cliente1.getMontoAPagar());
+		caja.registrarPago(cliente1, mercado);
+		assertEquals(205d, caja.getMontoTotal());
 	}
 	
 	
 	@Test
 	void testMontoTotalCliente2() {
+		caja.registrarPago(cliente2, mercado);
 		assertEquals(140d, cliente2.getMontoAPagar());
 	}
 
 	@Test
 	void testMontoTotalCliente3ConProductoCooperativa() {
+		caja.registrarPago(cliente3, mercado);
 		assertEquals(295d, cliente3.getMontoAPagar());
 	}
 
-	@Test
-	void testRegistrarFacturaDeImpuesto() {
-		assertEquals(20, caja.getMontoTotal());
-	}
 	
-	@Test
-	void testRegistrarFacturaDeServicio() {
-		assertEquals(200, caja2.getMontoTotal());
-		
-	}
+	
+
 
 }

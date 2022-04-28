@@ -2,14 +2,27 @@ package ar.edu.unq.po2.tp5;
 
 public class FacturaDeImpuesto extends Factura{
 
-	
+	private double tasaDeServicio;
 	
 	public FacturaDeImpuesto(double tasaDeServicio) {
-		super.setTasaDeServicio(tasaDeServicio);
+		this.tasaDeServicio = tasaDeServicio;
 	}
 
 	public double montoAPagar() {
-		return super.getTasaDeServicio();
+		return this.getTasaDeServicio();
+	}
+	
+	
+	public double getTasaDeServicio() {
+		return tasaDeServicio;
+	}
+
+	public double getPrecio() {
+		return this.montoAPagar();
+	}
+
+	public String getNombre() {
+		return "Factura de Impuesto";
 	}
 	
 	

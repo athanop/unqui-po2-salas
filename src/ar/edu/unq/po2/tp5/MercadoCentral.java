@@ -46,18 +46,18 @@ public class MercadoCentral {
 		return cantidadDeStock(producto) >= 1;
 	}
 
-	public int cantidadDeStock(Producto producto) {
+	public int cantidadDeStock(iElementosAPagar elemento) {
 		int stock = 0;
 		for (Producto prod:this.getProductos()) {
-			if (prod.getNombre().contentEquals(producto.getNombre())) {
+			if (prod.getNombre().contentEquals(elemento.getNombre())) {
 				stock++;
 			}
 		}
 		return stock;
 	}
 
-	public void disminuirStock(Producto producto) {
-		this.setStock(cantidadDeStock(producto)-1);
+	public void disminuirStock(iElementosAPagar elemento) {
+		this.setStock(cantidadDeStock(elemento)-1);
 		
 	}
 	

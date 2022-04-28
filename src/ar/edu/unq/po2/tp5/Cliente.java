@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Cliente {
 
-	private List<Producto> productos = new ArrayList<Producto>();
+	private List<iElementosAPagar> productos = new ArrayList<iElementosAPagar>();
 	private double montoAPagar;
 
 	public double getMontoAPagar() {
@@ -17,7 +17,7 @@ public class Cliente {
 	}
 	
 	
-	public List<Producto> getProductos() {
+	public List<iElementosAPagar> getProductos() {
 		return productos;
 	}
 	
@@ -26,9 +26,11 @@ public class Cliente {
 	}
 	
 
-	public void agregarProducto(Producto producto) {
-		this.getProductos().add(producto);
+	public void agregar(iElementosAPagar elemento) {
+		this.getProductos().add(elemento);
 	}
+
+	
 	
 	
 	

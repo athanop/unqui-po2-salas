@@ -24,9 +24,9 @@ class ClienteTestCase {
 		aguaMineral = new Producto("Agua Mineral", 95d);
 		
 		cliente = new Cliente();
-		cliente.agregarProducto(cafe);
-		cliente.agregarProducto(yerba);
-		cliente.agregarProducto(aguaMineral);
+		cliente.agregar(cafe);
+		cliente.agregar(yerba);
+		cliente.agregar(aguaMineral);
 	}
 
 	@Test

@@ -3,7 +3,7 @@ package ar.edu.unq.po2.tp5;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Caja implements Agencia {
+public class Caja {
 
 	private double montoTotal;
 	
@@ -15,11 +15,11 @@ public class Caja implements Agencia {
 		this.montoTotal = montoTotal;
 	}
 	
-	public void registrarProducto(Cliente cliente, MercadoCentral mercado) {
+	public void registrarPago(Cliente cliente, MercadoCentral mercado) {
 		double monto = 0;
-		for(Producto producto:cliente.getProductos()) {
-			monto = monto+producto.getPrecio();
-			mercado.disminuirStock(producto);
+		for(iElementosAPagar elemento:cliente.getProductos()) {
+			monto = monto+elemento.getPrecio();
+			mercado.disminuirStock(elemento);
 		}
 		this.setMontoTotal(monto);
 		this.informarMonto(cliente, monto);
@@ -31,15 +31,6 @@ public class Caja implements Agencia {
 	}
 
 	
-	@Override
-	public void registrarPago(Factura factura) {
-		this.setMontoTotal(factura.montoAPagar());
-	}
-
-
-
-		
-
 	
 
 }
