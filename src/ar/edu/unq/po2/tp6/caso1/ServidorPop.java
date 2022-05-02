@@ -22,4 +22,5 @@ public class ServidorPop implements IServidor {
       //realiza lo necesario para enviar el correo.		
 	}
 
+	
 }
