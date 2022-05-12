@@ -10,14 +10,6 @@ public abstract class SolicitudDeCredito {
 		return cliente;
 	}
 
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
-
-	
-	public void setMontoSolicitado(double montoSolicitado) {
-		this.montoSolicitado = montoSolicitado;
-	}
 
 	
 	public double getMontoSolicitado() {
@@ -28,9 +20,7 @@ public abstract class SolicitudDeCredito {
 		return plazoEnMeses;
 	}
 
-	public void setPlazoEnMeses(int plazoEnMeses) {
-		this.plazoEnMeses = plazoEnMeses;
-	}
+	
 
 	public SolicitudDeCredito(Cliente cliente, double montoSolicitado, int plazoEnMeses) {
 		this.cliente = cliente;

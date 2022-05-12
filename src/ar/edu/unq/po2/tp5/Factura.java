@@ -6,12 +6,5 @@ public abstract class Factura implements iElementosAPagar{
 
 	public abstract double montoAPagar();
 	 
-	public double getMontoTotal() {
-		return montoTotal;
-	}
-
-	public void setMontoTotal(double montoTotal) {
-		this.montoTotal = montoTotal;
-	}
 	
 }

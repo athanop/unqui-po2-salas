@@ -41,7 +41,6 @@ class EquipoDeTrabajoTestCase {
 	@Test
 	public void promedioEdades() {
 		assertEquals(27,equipo.promedioDeEdad(integrantes));
-		System.out.println(equipo.promedioDeEdad(integrantes));
 		
 	}
 
