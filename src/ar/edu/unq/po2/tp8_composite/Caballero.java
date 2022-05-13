@@ -10,6 +10,7 @@ public class Caballero implements Caracter{
 		this.hacerZigZagHacia(punto);
 	}
 
+	
 	private void hacerZigZagHacia(Point point) {
 		//hace algo
 	}
