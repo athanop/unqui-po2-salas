@@ -1,0 +1,18 @@
+Ejercicio 1 - Desde el libro
+
+1,2- El patrón de diseño permite que un objeto compuesto se pueda tratar igual que los objetos que lo componen (las hojas), ya que comparten comportamiento por medio de una interfaz, y responden los mismos mensajes.
+
+3-Se puede aplicar cuando tenemos objetos que se componen de diferentes objetos con un mismo comportamient y protocolo.
+
+4,5-Una abstracción de los tipos de objetos compuesto/componente a través de protocolos en común. Dicha abstracción se consigue a través de <<interface>> ya que agrupan objetos con un protocolo en común. Por lo tanto, si un objeto implementa la misma interface de un componente, se consigue este tipo de abstracción.
+
+
+Ejercicio 2 - Cultivos
+
+1- Estamos delegando constantemente las tareas hasta que el último objeto compuesto completa su ejecución.
+
+2- Se puede obtener por un lado la suma de todas las ganancias del cultivo puro, por otro lado la suma de los cultivos mixtos y sumar ambos resultados. También se puede tener un campo de cultivo general en donde estén todas las parcelas y delegarles la responsabilidad de sumar a cada una de ellas. Sean hojas o compuestos, deben tener la capacidad de responder al mismo mensaje de manera polimórfica.
+
+3- El composite debería implementar las operaciones de borrado y agregado.
+
+4- Cultivo es component, sistemaDeCultivos composite, soja y trigo son las hojas.
