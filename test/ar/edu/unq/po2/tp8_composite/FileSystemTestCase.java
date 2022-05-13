@@ -39,7 +39,7 @@ class FileSystemTestCase {
 	void testPesoDelDirectorioJuegos() {
 		assertEquals(directorio1.totalSize(), 30);
 	}
-
+	
 	@Test
 	void testPesoDelDirectorioVideosVacio() {
 		assertEquals(directorio2.totalSize(), 0);
