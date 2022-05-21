@@ -49,7 +49,6 @@ class PartidaTestCase {
 		assertEquals(participante.getNotificaciones().size(),0);
 	}
 
-
 	@Test
 	void testLaPartidaTieneDosParticipantesAceptados() {
 		participante.solicitarUnirse(partida);
