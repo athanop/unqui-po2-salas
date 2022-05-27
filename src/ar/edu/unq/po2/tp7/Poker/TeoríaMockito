@@ -1,0 +1,24 @@
+/*   *  El mock Spy controla el orden de los mensajes
+	 *  para indicar que el objeto mock debe recibir una secuencia de mensajes particular en un orden preestablecido, se utiliza inOrder.
+	 * 	
+	 *  String paloDeCarta = dobleCarta.getPalo();
+		String colorDeCarta = dobleCarta.getColor();
+		
+		InOrder inOrder = Mockito.inOrder(dobleCarta);
+		inOrder.verify(dobleCarta).getPalo();
+		inOrder.verify(dobleCarta).getColor();
+		
+	 *	Con mock stub no esnecesario indicar el orden de los mensajes.
+		
+	 *	La forma de verificación es verify.
+		
+	 *  Los	test doubles se utilizan para realizar un test unitario en el que cualquier conocimiento hacia afuera del SUT (la clase que estamos testeando) sea un objeto falso. 
+
+	 *  Podemos encontrar distintos tipos de test double. 
+
+	 * Dummy: son utilizados normalmente para rellenar listas de parámetros. Nunca se utilizan realmente.
+	 * Stub: utilizado para proporcionar respuestas pre-programadas a las llamadas realizadas durante la prueba. Por ejemplo, hacer que devuelva un valor específico.
+	 * Mock: Es un stub con la capacidad de poder verificarse.
+	 * Spy: Es un mock pero que llama realmente a los métodos del objeto real.
+		
+*/
