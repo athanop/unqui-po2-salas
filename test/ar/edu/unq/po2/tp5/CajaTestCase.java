@@ -8,6 +8,14 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp5.MercadoCentral.Caja;
+import ar.edu.unq.po2.tp5.MercadoCentral.Cliente;
+import ar.edu.unq.po2.tp5.MercadoCentral.FacturaDeImpuesto;
+import ar.edu.unq.po2.tp5.MercadoCentral.FacturaDeServicio;
+import ar.edu.unq.po2.tp5.MercadoCentral.MercadoCentral;
+import ar.edu.unq.po2.tp5.MercadoCentral.Producto;
+import ar.edu.unq.po2.tp5.MercadoCentral.ProductoCooperativa;
+
 class CajaTestCase {
 	
 	private Caja caja;

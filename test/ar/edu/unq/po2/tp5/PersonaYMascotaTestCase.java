@@ -9,6 +9,9 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp5.PersonasYMascotas.Mascota;
+import ar.edu.unq.po2.tp5.PersonasYMascotas.Persona;
+
 class PersonaYMascotaTestCase {
 
 	Persona persona1;

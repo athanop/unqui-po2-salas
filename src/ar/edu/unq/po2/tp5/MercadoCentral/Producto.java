@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp5;
+package ar.edu.unq.po2.tp5.MercadoCentral;
 
 public class Producto implements iElementosAPagar{
 	

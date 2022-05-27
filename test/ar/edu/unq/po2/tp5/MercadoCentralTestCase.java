@@ -5,6 +5,11 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp5.MercadoCentral.Caja;
+import ar.edu.unq.po2.tp5.MercadoCentral.Cliente;
+import ar.edu.unq.po2.tp5.MercadoCentral.MercadoCentral;
+import ar.edu.unq.po2.tp5.MercadoCentral.Producto;
+
 class MercadoCentralTestCase {
 
 	MercadoCentral mercado;
