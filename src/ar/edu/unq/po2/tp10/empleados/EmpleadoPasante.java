@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp10;
+package ar.edu.unq.po2.tp10.empleados;
 
 public class EmpleadoPasante extends Empleado{
 
