@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp10.empleados;
+package ar.edu.unq.po2.tp10;
 
 public abstract class Empleado {
 
