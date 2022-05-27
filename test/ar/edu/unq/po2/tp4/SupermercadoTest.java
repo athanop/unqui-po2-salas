@@ -3,8 +3,8 @@ package ar.edu.unq.po2.tp4;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.po2.tp4.Producto;
-import ar.edu.unq.po2.tp4.Supermercado;
+import ar.edu.unq.po2.tp4.Supermercado.Producto;
+import ar.edu.unq.po2.tp4.Supermercado.Supermercado;
 
 import static org.junit.jupiter.api.Assertions.*;
 
