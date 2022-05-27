@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp8_composite;
+package ar.edu.unq.po2.tp8_composite.JuegoDeEstrategia;
 
 import java.util.ArrayList;
 import java.util.List;

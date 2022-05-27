@@ -10,6 +10,10 @@ import java.util.Set;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp9_observer.Publicaciones.Articulo;
+import ar.edu.unq.po2.tp9_observer.Publicaciones.Investigador;
+import ar.edu.unq.po2.tp9_observer.Publicaciones.SistemaDeReferencia;
+
 class SistemaDeReferenciaTestCase {
 
 	SistemaDeReferencia sistema;

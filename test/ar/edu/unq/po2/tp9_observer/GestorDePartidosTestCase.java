@@ -8,6 +8,11 @@ import java.util.Set;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp9_observer.EncuentrosDeportivos.AplicacionMovil;
+import ar.edu.unq.po2.tp9_observer.EncuentrosDeportivos.GestorDePartido;
+import ar.edu.unq.po2.tp9_observer.EncuentrosDeportivos.Partido;
+import ar.edu.unq.po2.tp9_observer.EncuentrosDeportivos.Servidor;
+
 class GestorDePartidosTestCase {
 	
 	private GestorDePartido gestor;

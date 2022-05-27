@@ -9,6 +9,10 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp8_composite.FileSystem.Archivo;
+import ar.edu.unq.po2.tp8_composite.FileSystem.Directorio;
+import ar.edu.unq.po2.tp8_composite.FileSystem.FileSystem;
+
 class FileSystemTestCase {
 
 	Archivo archivo1;

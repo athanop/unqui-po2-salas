@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp9_observer;
+package ar.edu.unq.po2.tp9_observer.Concurso;
 
 public interface IObserverParticipante {
 

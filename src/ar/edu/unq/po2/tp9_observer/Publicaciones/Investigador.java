@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp9_observer;
+package ar.edu.unq.po2.tp9_observer.Publicaciones;
 
 import java.util.ArrayList;
 import java.util.List;
