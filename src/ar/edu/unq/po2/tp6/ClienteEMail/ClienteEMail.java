@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp6.caso1;
+package ar.edu.unq.po2.tp6.ClienteEMail;
 
 
 import java.util.ArrayList;
