@@ -6,6 +6,11 @@ import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp7.Poker.Carta;
+import ar.edu.unq.po2.tp7.Poker.Jugada;
+import ar.edu.unq.po2.tp7.Poker.PokerStatus;
+
 import static org.mockito.Mockito.*
 ;
 class JugadaTestCase {

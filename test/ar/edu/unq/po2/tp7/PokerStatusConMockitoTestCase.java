@@ -6,6 +6,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
 
+import ar.edu.unq.po2.tp7.Poker.Carta;
+import ar.edu.unq.po2.tp7.Poker.PokerStatus;
+
 import static org.mockito.Mockito.*;
 
 class PokerStatusConMockitoTestCase {

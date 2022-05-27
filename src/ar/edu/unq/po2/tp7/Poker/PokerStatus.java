@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp7;
+package ar.edu.unq.po2.tp7.Poker;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -46,7 +46,7 @@ public class PokerStatus {
 	}
 
 	// genera la mano de cartas
-	List<Carta> repartirMano(Carta primeraCarta, Carta segundaCarta, Carta terceraCarta, Carta cuartaCarta,
+	public List<Carta> repartirMano(Carta primeraCarta, Carta segundaCarta, Carta terceraCarta, Carta cuartaCarta,
 			Carta quintaCarta) {
 
 		List<Carta> mano = Arrays.asList(primeraCarta, segundaCarta, terceraCarta, cuartaCarta, quintaCarta);
