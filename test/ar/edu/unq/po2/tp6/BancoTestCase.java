@@ -5,6 +5,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp6.Banco.Cliente;
+import ar.edu.unq.po2.tp6.Banco.Propiedad;
+import ar.edu.unq.po2.tp6.Banco.SistemaInformatico;
+import ar.edu.unq.po2.tp6.Banco.SolicitudDeCredito;
+import ar.edu.unq.po2.tp6.Banco.SolicitudDeCreditoHipotecario;
+import ar.edu.unq.po2.tp6.Banco.SolicitudDeCreditoPersonal;
+
 class BancoTestCase {
 
 	SistemaInformatico sistema;

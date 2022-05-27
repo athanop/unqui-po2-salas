@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.tp6;
+package ar.edu.unq.po2.tp6.Banco;
 
 public class Cliente {
 	private String nombre;
