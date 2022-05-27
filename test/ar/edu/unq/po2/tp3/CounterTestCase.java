@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp3.Counter.Counter;
+
 public class CounterTestCase {
 	private Counter counter;
 	private ArrayList<Integer> arrayTest = new ArrayList<Integer>();

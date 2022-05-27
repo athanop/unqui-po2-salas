@@ -8,6 +8,9 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import ar.edu.unq.po2.tp3.EquipoDeTrabajo.EquipoDeTrabajo;
+import ar.edu.unq.po2.tp3.EquipoDeTrabajo.Persona;
+
 class EquipoDeTrabajoTestCase {
 
 	EquipoDeTrabajo equipo;

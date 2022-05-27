@@ -3,7 +3,7 @@ package ar.edu.unq.po2.tp8_composite.JuegoDeEstrategia;
 import java.util.ArrayList;
 import java.util.List;
 
-import ar.edu.unq.po2.tp3.Point;
+import ar.edu.unq.po2.tp3.Point.Point;
 
 public class Ejercito implements Caracter{
 
