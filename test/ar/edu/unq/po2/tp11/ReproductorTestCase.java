@@ -57,4 +57,13 @@ class ReproductorTestCase {
 		mp3.stop();
 		verifyZeroInteractions(song);
 	}
+	
+	@Test
+	void test_UnReproductorPausaLaCancionEnReproduccion_YLuegoContinuaReproduciendola() throws Exception {
+		mp3.agregarCancionAReproduccion(song);
+		mp3.play();
+		mp3.pause();
+		mp3.pause();
+		assertTrue(mp3.enReproduccion());
+	}
 }
