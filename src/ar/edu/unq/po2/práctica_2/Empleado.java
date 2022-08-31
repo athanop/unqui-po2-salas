@@ -1,4 +1,4 @@
-package Semana1.Empresa;
+package ar.edu.unq.po2.práctica_2;
 
 import java.time.LocalDate;
 
