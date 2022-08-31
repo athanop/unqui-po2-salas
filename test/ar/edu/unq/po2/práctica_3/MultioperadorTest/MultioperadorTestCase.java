@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.práctica_3;
+package ar.edu.unq.po2.práctica_3.MultioperadorTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,6 +7,8 @@ import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.práctica_3.Multioperador.Multioperador;
 
 class MultioperadorTestCase {
 

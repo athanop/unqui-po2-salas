@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.práctica_3;
+package ar.edu.unq.po2.práctica_3.CounterTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.práctica_3.Counter.Counter;
 
 public class CounterTestCase {
 	

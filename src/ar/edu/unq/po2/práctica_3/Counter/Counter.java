@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.práctica_3;
+package ar.edu.unq.po2.práctica_3.Counter;
 
 import java.util.ArrayList;
 import java.util.List;
