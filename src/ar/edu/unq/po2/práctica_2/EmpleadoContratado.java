@@ -20,14 +20,7 @@ public class EmpleadoContratado extends Empleado{
 		return this.sueldoBruto()-this.retenciones();
 	}
 
-	@Override
-	public double obraSocial() {
-		return 0;
-	}
 
-	@Override
-	public double aportes() {
-		return 0;
-	}
+
 
 }

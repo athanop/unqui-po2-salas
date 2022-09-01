@@ -37,7 +37,12 @@ public abstract class Empleado {
 	
 	public abstract double sueldoNeto();
 	
-	public abstract double obraSocial();
+	public double obraSocial() {
+		return 0;
+	}
 
-	public abstract double aportes();
+	public double aportes() {
+		return 0;
+	}
+	
 }
