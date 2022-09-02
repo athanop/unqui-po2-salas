@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.práctica_4.Supermercado;
+package ar.edu.unq.po2.práctica_4.Supermercado.Supermercado;
 
 import java.util.ArrayList;
 import java.util.List;

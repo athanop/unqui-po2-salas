@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.práctica_4.Supermercado;
+package ar.edu.unq.po2.práctica_4.Supermercado.Supermercado;
 
 public class ProductoPrimeraNecesidad extends Producto{
 
