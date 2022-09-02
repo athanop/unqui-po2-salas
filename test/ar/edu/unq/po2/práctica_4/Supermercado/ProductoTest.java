@@ -3,7 +3,7 @@ package ar.edu.unq.po2.práctica_4.Supermercado;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.po2.práctica_4.Supermercado.Supermercado.Producto;
+import ar.edu.unq.po2.práctica_4.Supermercado.Producto;
 
 import static org.junit.jupiter.api.Assertions.*;
 

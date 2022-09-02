@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.práctica_4.Supermercado.Supermercado;
+package ar.edu.unq.po2.práctica_4.Supermercado;
 
 public class Producto {
 
