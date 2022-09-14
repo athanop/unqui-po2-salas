@@ -2,6 +2,7 @@ package ar.edu.unq.po2.práctica_5;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,13 +11,15 @@ import org.junit.jupiter.api.Test;
 
 import ar.edu.unq.po2.práctica_5.MercadoCentral.Caja;
 import ar.edu.unq.po2.práctica_5.MercadoCentral.Cliente;
-import ar.edu.unq.po2.práctica_5.MercadoCentral.Producto;
+import ar.edu.unq.po2.práctica_5.MercadoCentral.IElemento;
+import ar.edu.unq.po2.práctica_5.MercadoCentral.Factura.Servicio;
+import ar.edu.unq.po2.práctica_5.MercadoCentral.Producto.Producto;
 
 class CajaTestCase {
 
 	Caja caja;
 	Cliente cliente;
-	Producto yerba, agua, coca;
+	IElemento yerba, agua, coca, servicio, impuesto;
 	
 	@BeforeEach
 	void setUp() throws Exception {
@@ -29,7 +32,7 @@ class CajaTestCase {
 		yerba = new Producto("Yerba", 20d);
 		agua = new Producto("Agua", 10d);
 		coca = new Producto("Coca", 15d);
-		
+		servicio = new Servicio(10d, 10, LocalDate.of(2022, 5, 5));
 		
 		
 		
@@ -37,7 +40,7 @@ class CajaTestCase {
 
 	@Test
 	void testLaCajaConoceSuStockDeAgua() {
-		Map<Producto, Integer> stockDeAgua = new HashMap<Producto, Integer>();
+		Map<IElemento, Integer> stockDeAgua = new HashMap<IElemento, Integer>();
 		stockDeAgua.put(agua, 5);
 		caja.setStock(stockDeAgua);
 		
@@ -46,7 +49,7 @@ class CajaTestCase {
 	
 	@Test
 	void testCajaRegistraLosProductosDeUnClienteYDisminuyeSuStock() {
-		Map<Producto, Integer> stockDelMercado = new HashMap<Producto, Integer>();
+		Map<IElemento, Integer> stockDelMercado = new HashMap<IElemento, Integer>();
 
 		stockDelMercado.put(agua, 5);
 		stockDelMercado.put(coca, 10);
@@ -56,9 +59,24 @@ class CajaTestCase {
 		cliente.agregarProducto(coca);
 		cliente.agregarProducto(yerba);
 		
-		caja.registrarProducto(cliente);
+		caja.registrarPago(cliente);
 		
 		assertEquals(17, caja.getStock());
+	}
+	
+	@Test
+	void testLaCajaCobraAUnClienteConUnServicio() {
+		Map<IElemento, Integer> stock = new HashMap<IElemento, Integer>();
+		stock.put(agua, 5);
+		stock.put(servicio, 100);
+		caja.setStock(stock);
+		
+		cliente.agregarProducto(agua);
+		cliente.agregarProducto(servicio);
+		
+		caja.registrarPago(cliente);
+		
+		assertEquals(caja.getMontoAPagar(), 110d);
 	}
 
 }

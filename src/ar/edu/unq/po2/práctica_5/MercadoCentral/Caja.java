@@ -4,34 +4,42 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import ar.edu.unq.po2.práctica_5.MercadoCentral.Producto.Producto;
+
 public class Caja {
 
 	private Double montoAPagar;
-	private Map<Producto, Integer> stock;
+	private Map<IElemento, Integer> stock;
+	
+
+	public Double getMontoAPagar() {
+		return montoAPagar;
+	}
 	
 	public Integer getStock() {
 		Integer stockTotal = 0;
-		for(Entry<Producto, Integer> st : this.stock.entrySet()) {
+		for(Entry<IElemento, Integer> st : this.stock.entrySet()) {
 			stockTotal += st.getValue();
 		}
 		return stockTotal;
 	}
 	
-	public void setStock(Map<Producto, Integer> stock) {
+	public void setStock(Map<IElemento, Integer> stock) {
 		this.stock = stock;
 	}
 
 	public Caja() {
-		this.stock = new HashMap<Producto, Integer>();
+		this.stock = new HashMap<IElemento, Integer>();
 	}
 	
 	
-	public void registrarProducto(Cliente cliente) {
+	public void registrarPago(Cliente cliente) {
 		double total = 0;
-		for(Producto p:cliente.getProductos()) {
+		for(IElemento p:cliente.getProductos()) {
 			total += p.getPrecio();
 			this.disminuirStock(p);
 		}
+		this.montoAPagar=total;
 		informarTotal(cliente, total);
 	}
 
@@ -40,12 +48,10 @@ public class Caja {
 	}
 
 
-	public void disminuirStock(Producto producto) {
+	public void disminuirStock(IElemento producto) {
 		int stockActual = this.stock.get(producto);
 		this.stock.put(producto, stockActual-1);
-
 	}
-
 
 	
 	

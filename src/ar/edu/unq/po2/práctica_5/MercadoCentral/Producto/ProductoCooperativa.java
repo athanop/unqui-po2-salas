@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.práctica_5.MercadoCentral;
+package ar.edu.unq.po2.práctica_5.MercadoCentral.Producto;
 
 public class ProductoCooperativa extends Producto{
 

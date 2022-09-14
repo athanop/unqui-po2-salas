@@ -1,6 +1,8 @@
-package ar.edu.unq.po2.práctica_5.MercadoCentral;
+package ar.edu.unq.po2.práctica_5.MercadoCentral.Producto;
 
-public class Producto {
+import ar.edu.unq.po2.práctica_5.MercadoCentral.IElemento;
+
+public class Producto implements IElemento{
 
 	private String nombre;
 	private Double precio;
@@ -15,6 +17,8 @@ public class Producto {
 		return nombre;
 	}
 	
+	public Producto() {
+	}
 
 	public Producto(String nombre, Double precio) {
 		super();
