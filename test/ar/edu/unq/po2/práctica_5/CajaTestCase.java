@@ -52,7 +52,6 @@ class CajaTestCase {
 		stockDelMercado.put(coca, 10);
 		stockDelMercado.put(yerba, 5);
 		caja.setStock(stockDelMercado);
-		
 		cliente.agregarProducto(agua);
 		cliente.agregarProducto(coca);
 		cliente.agregarProducto(yerba);
