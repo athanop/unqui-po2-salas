@@ -1,0 +1,4 @@
+En java no se es posible agregar en en una misma colección Personas y Mascotas, ya que es necesario aclarar su tipo.
+El mecanismo que permite recoger los nombres de los objetos de la colección se llama encapsulamiento, el cual mantiene oculto el estado interno del objeto.
+Si la clase Mascota y la clase Persona heredaran de una misma superclase su estructura y comportamiento sería posible responder a los mismos mensajes. 
+Si Persona fuera una subclase de otra que no podemos modificar, lo indicado para asegurar el polimorfismo sería utilizar una interface que se pueda utilizar tanto en Persona, como en la clase Mascota.
