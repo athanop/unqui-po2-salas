@@ -1,4 +1,4 @@
-package ar.edu.unq.po2.práctica_5;
+package ar.edu.unq.po2.práctica_5.MercadoCentral;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,9 +9,7 @@ import java.util.Map;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.po2.práctica_5.MercadoCentral.Caja;
-import ar.edu.unq.po2.práctica_5.MercadoCentral.Cliente;
-import ar.edu.unq.po2.práctica_5.MercadoCentral.IElemento;
+
 import ar.edu.unq.po2.práctica_5.MercadoCentral.Factura.Servicio;
 import ar.edu.unq.po2.práctica_5.MercadoCentral.Producto.Producto;
 

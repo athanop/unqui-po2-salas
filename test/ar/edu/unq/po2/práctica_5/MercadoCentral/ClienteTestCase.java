@@ -1,11 +1,10 @@
-package ar.edu.unq.po2.práctica_5;
+package ar.edu.unq.po2.práctica_5.MercadoCentral;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.unq.po2.práctica_5.MercadoCentral.Cliente;
 import ar.edu.unq.po2.práctica_5.MercadoCentral.Producto.Producto;
 
 class ClienteTestCase {
