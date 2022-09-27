@@ -7,7 +7,6 @@ public class Banco {
 
 	private List<Cliente> clientes;
 	private List<SolicitudDeCredito> solicitudes;
-	private SistemaInformatico sistema;
 	
 	public List<Cliente> getClientes() {
 		return clientes;
@@ -20,21 +19,22 @@ public class Banco {
 	public Banco() {
 		this.clientes = new ArrayList<Cliente>();
 		this.solicitudes = new ArrayList<SolicitudDeCredito>();
-		this.sistema = new SistemaInformatico();
-		this.sistema.banco = this;
 	}
 	
 	
 	public void agregarCliente(Cliente cliente) {
-		this.sistema.agregarCliente(cliente);
+		this.getClientes().add(cliente);
 	}
 	
 	public void agregarSolicitud(SolicitudDeCredito solicitud) {
-		this.sistema.agregarSolicitud(solicitud);
+		if(solicitud.esAceptable()) {
+			this.getSolicitudes().add(solicitud);
+		}
 	}
 	
 	public Double montoTotal() {
-		return this.sistema.montoTotal();
+		Double total = this.getSolicitudes().stream().mapToDouble(SolicitudDeCredito::getMonto).sum();
+		return total;
 	}
 	
 	

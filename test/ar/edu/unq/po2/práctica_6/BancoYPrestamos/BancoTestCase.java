@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 class BancoTestCase {
 
 	Banco banco;	
-	SistemaInformatico sistema;
 	Cliente cliente;
 	SolicitudDeCredito creditoPersonal;
 	
@@ -23,19 +22,21 @@ class BancoTestCase {
 	}
 
 	@Test
-	void testElBancoAgregaUnClientePorMedioDelSistemaInformatico() {
+	void testElBancoAgregaUnCliente() {
 		banco.agregarCliente(cliente);
 		assertEquals(banco.getClientes().size(), 1);
 	}
 
 	@Test
-	void testElBancoAgregaUnaSolicitudPorMedioDelSistemaInformatico() {
+	void testElBancoAgregaUnaSolicitud() {
+		cliente = new Cliente("Marcos", "1243", 23, 200000d, 16000d);
+		creditoPersonal = new CreditoPersonal(cliente, 20d, 3);
 		banco.agregarSolicitud(creditoPersonal);
 		assertEquals(banco.getSolicitudes().size(), 1);
 	}
 	
 	@Test
-	void testElSistemaInformaticoDelBancoConoceElMontoTotal() {
+	void testElBancoConoceElMontoTotal() {
 		cliente = new Cliente("Marcos", "1243", 23, 200000d, 16000d);
 		creditoPersonal = new CreditoPersonal(cliente, 20d, 3);
 		banco.agregarSolicitud(creditoPersonal);
