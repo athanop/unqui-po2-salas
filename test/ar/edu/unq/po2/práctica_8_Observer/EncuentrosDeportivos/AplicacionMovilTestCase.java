@@ -23,12 +23,6 @@ class AplicacionMovilTestCase {
 		app = new AplicacionMovil(adm);
 		
 	}
-
-	@Test
-	void test() {
-		fail("Not yet implemented");
-	}
-
 	
 	@Test
 	void testUnaAppSeSuscribeAlDeporteBasquet() {
