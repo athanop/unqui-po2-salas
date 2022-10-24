@@ -1,0 +1,22 @@
+Ejercicio 6 – Contestar y justificar las respuestas
+
+1. Existe más de un tipo de adaptadores, mencione y explique cada uno de ellos.
+
+- Class adapter usa herencia multiple para adaptar una interface a otra
+- Object adapter se basa en la composicion del objeto. Es la subclase de target, adaptando el comportamiento para funcionar con la clase adaptee.
+
+
+2. ¿En qué se diferencia un tipo de adaptador del otro?
+La diferencia es que Class adapter tiene una herencia múltiple para adaptar y Object adapter hereda del Target para adaptar el comportamiento para funcionar con la clase adaptee. El beneficio de Object adapter es un acoplamiento flexible entre el cliente y el adaptado.
+
+3. ¿Se pueden utilizar ambas alternativas de implementación del patrón en java? ¿Justifique la respuesta?
+En el caso de java no funcionaria Class adapter ya que no permite herencia múltiple.
+
+
+4. Ver la interface Enumeration de java y la clase Vector, preste atención a que dicha clase contiene un método "elements()". Explique cómo funciona el patrón adapter y cuáles son los roles de los participantes entre la interface y clase mencionada. Mencione qué tipo de implementación del patrón se utiliza.
+
+La interface Enumeration es un adapter, permite que los elementos de un Vector puedan ser iterados. Enumeration es el adapter y Vector el adaptee.
+
+
+5. Realice el mismo análisis del punto 3, pero con la interface Iterator, la clase ArrayList (preste atención al método "iterator()"). Muestre un ejemplo de funcionamiento y especifique los roles de cada participante.
+La clase ArrayList y la interface Iterator están adaptadas por medio de una clase llamada Itr. La clase ArrayList es el adaptee e Iterator es el target.
